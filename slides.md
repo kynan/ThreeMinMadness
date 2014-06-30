@@ -50,6 +50,10 @@ Two-layer abstraction for finite element computation from high-level description
 
 ---
 
+background-image:url(images/fem.svg)
+
+---
+
 ## The Firedrake/PyOP2 tool chain
 
 ![Firedrake](images/firedrake_toolchain.svg)

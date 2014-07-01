@@ -10,26 +10,49 @@ class: center, middle, inverse
 
 ---
 
+.left-column[
+## Computational Science landscape
+
+* Rapidly changing
+* Many-core hardware: paradigm shift
+* scientific software needs to keep up
+]
+
+--
+
+.right-column[
 ## Scientific Software
 
-### Ideal world
+### In an ideal world
 * computationally efficient
 * maintainable
 * composable
 * allow scientists to work very productively
+]
 
 --
 
+.right-column[
 ### Reality
 * solve a very specific research problem
 * for a specific kind of user
 * on a particular hardware platform
+* hard to port to different platform
+]
 
 --
 
+.right-column[
 ### Solution?
 
-Get the abstractions right!
+* Separating the low-level implementation from the high-level problem specification
+* Generate platform-specific implementations from a common source instead of hand-coding them
+* Runtime code generation and JIT compilation open space for compiler-driven optimizations and performance portability
+]
+
+---
+
+background-image:url(images/fem.svg)
 
 ---
 
@@ -47,10 +70,6 @@ Two-layer abstraction for finite element computation from high-level description
   *Drive FE computations from a high-level problem specification*
 * PyOP2: a high-level interface to unstructured mesh based methods  
   *Efficiently execute kernels over an unstructured grid in parallel*
-
----
-
-background-image:url(images/fem.svg)
 
 ---
 
